@@ -1,0 +1,55 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+/* Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+/* Table styling */
+table {
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
