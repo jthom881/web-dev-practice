@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Dev Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
+</nav>
+
+<h1>Web Development Self-Assessment Quiz</h1>
+
+<form id="quizForm">
+
+    <!-- Q1 Fill in the blank -->
+    <div class="question">
+        <p>1. HTML stands for ______ Markup Language.</p>
+        <input type="text" id="q1">
+    </div>
+
+    <!-- Q2 MC -->
+    <div class="question">
+        <p>2. Which language is used for styling a website?</p>
+        <label><input type="radio" name="q2" value="html"> HTML</label><br>
+        <label><input type="radio" name="q2" value="css"> CSS</label><br>
+        <label><input type="radio" name="q2" value="js"> JavaScript</label>
+    </div>
+
+    <!-- Q3 MC -->
+    <div class="question">
+        <p>3. What does JavaScript mainly add to a website?</p>
+        <label><input type="radio" name="q3" value="structure"> Structure</label><br>
+        <label><input type="radio" name="q3" value="style"> Styling</label><br>
+        <label><input type="radio" name="q3" value="interaction"> Interactivity</label>
+    </div>
+
+    <!-- Q4 MC -->
+    <div class="question">
+        <p>4. Which tag is used to create a hyperlink?</p>
+        <label><input type="radio" name="q4" value="a">&lt;a&gt;</label><br>
+        <label><input type="radio" name="q4" value="link">&lt;link&gt;</label><br>
+        <label><input type="radio" name="q4" value="href">&lt;href&gt;</label>
+    </div>
+
+    <!-- Q5 Multi-select -->
+    <div class="question">
+        <p>5. Which are core web development technologies? (Select all)</p>
+        <label><input type="checkbox" name="q5" value="html"> HTML</label><br>
+        <label><input type="checkbox" name="q5" value="css"> CSS</label><br>
+        <label><input type="checkbox" name="q5" value="js"> JavaScript</label><br>
+        <label><input type="checkbox" name="q5" value="python"> Python</label>
+    </div>
+
+    <button type="button" onclick="gradeQuiz()">Submit</button>
+    <button type="reset" onclick="resetQuiz()">Reset</button>
+
+</form>
+
+<div id="results"></div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
